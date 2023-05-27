@@ -5,7 +5,7 @@ import urllib.request, json
 # specify languages
 lesan_LANGS = ["Amharic", "Tigrinya"]
 lesan_LANGS_codes = ["am", "ti"]
-ghananlp_LANGS = ["Twi","Ga","Ewe","Yoruba","Dagbani","Kikuyu","Gurune","Luo","Kimeru"]
+ghananlp_LANGS = ["Twi","Ga","Ewe","Yoruba","Dagbani","Kikuyu","Gurene","Luo","Kimeru"]
 ghananlp_LANGS_codes = ["tw","gaa","ee","yo","dag","ki","gur","luo","mer"]
 
 LANGS = ["English"]+lesan_LANGS+ghananlp_LANGS
@@ -74,7 +74,7 @@ def translate(text, src_lang, tgt_lang):
             print("EXCEPTION::GHANANLP::")
             print(e)       
     print(result)
-    return 
+    return result
 
 demo = gr.Interface(
     fn=translate,
@@ -87,8 +87,8 @@ demo = gr.Interface(
     examples=[["United, we will preserve our culture!", "English", "Twi"],
               ["United, we will preserve our culture!", "English", "Amharic"]],
     cache_examples=False,
-    title="Translation Demo",
-    description="GhanaNLP, Algorine, Lesan, DAIR, All Rights Reserved 2023"
+    title="Unified African Language Translator",
+    description="Joint work by GhanaNLP, Algorine, Lesan, DAIR, 2023"
 )
 
 demo.launch(share=True,server_port=8080)
