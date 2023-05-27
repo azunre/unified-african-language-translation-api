@@ -1,6 +1,8 @@
 # Unified African Language Translation API
 This repo provides a wrapper to combine the GhanaNLP and Lesan African language translation APIs to expand the language coverage
 
+![Translator UI](screenshot.png?raw=true "Translator UI")
+
 Currently, the combined languages thus covered are "Amharic", "Tigrinya", "Twi", "Ga", "Ewe", "Yoruba", "Dagbani", "Kikuyu", "Gurune", "Luo" and "Kimeru". This corresponds to the language codes "am", "ti", "tw", "gaa","ee", "yo", "dag", "ki", "gur", "luo" and "mer" (respectively)
 
 To install and use the wrapper through the included gradio interface:
